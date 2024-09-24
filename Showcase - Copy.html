@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase - Ecommerce Aggregator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            color: #fff;
+            background-color: #070606;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header and navigation styling */
+        header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navigation {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navigation li a:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        /* Title styling */
+        .title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 2.5em;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        /* Card grid styling */
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            color: #000;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card-description {
+            color: #444;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">PIVTx</div>
+        <nav>
+            <ul class="navigation d-flex align-items-center">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Showcase.html">Showcase</a></li>
+                <li><a href="./About Us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title">
+        <h2>Featured Collections</h2>
+    </div>
+
+    <div class="showcase-grid">
+    <!-- Card 1 with Instagram link -->
+    <a href="https://www.instagram.com/randomprofile1/" target="_blank" class="card">
+        <img src="./Images/anavabyree-20240227_091935-430400419_1456462724942264_5330745269556265661_n.jpeg" alt="Product 1">
+        <div class="card-content">
+            <h3 class="card-title">Anavabyree Collection</h3>
+            <p class="card-description">Discover exclusive handcrafted clothing blending tradition with modern trends.</p>
+        </div>
+    </a>
+
+    <!-- Card 2 with Instagram link -->
+    <a href="https://www.instagram.com/randomprofile2/" target="_blank" class="card">
+        <img src="./Images/tote_toodles-20210826_154935-240409174_953890122009671_1986592132493618114_n.jpeg" alt="Product 2">
+        <div class="card-content">
+            <h3 class="card-title">Tote Toodles</h3>
+            <p class="card-description">Stylish and sustainable tote bags for everyday use, perfect for every occasion.</p>
+        </div>
+    </a>
+
+    <!-- Card 3 with Instagram link -->
+    <a href="https://www.instagram.com/randomprofile3/" target="_blank" class="card">
+        <img src="./Images/bombay.bintage-20240217_192658-427950402_1489888408540932_5027256614065204511_n.jpeg" alt="Product 3">
+        <div class="card-content">
+            <h3 class="card-title">Bombay Bintage</h3>
+            <p class="card-description">Vintage-inspired clothing bringing the charm of yesteryears to modern wardrobes.</p>
+        </div>
+    </a>
+
+    <!-- Card 4 with Instagram link -->
+    <a href="https://www.instagram.com/randomprofile4/" target="_blank" class="card">
+        <img src="./Images/Esscent.jpg" alt="Product 4">
+        <div class="card-content">
+            <h3 class="card-title">Esscent Fragrances</h3>
+            <p class="card-description">Luxury scents handcrafted to leave a lasting impression, with a focus on sustainability.</p>
+        </div>
+    </a>
+
+    <!-- Card 5 with Instagram link -->
+    <a href="https://www.instagram.com/randomprofile5/" target="_blank" class="card">
+        <img src="./Images/y2kcache-20230804_210428-364943182_808845644227995_6743215853541497686_n.jpeg" alt="Product 5">
+        <div class="card-content">
+            <h3 class="card-title">Y2K Cache</h3>
+            <p class="card-description">Revive the Y2K era with bold and trendy outfits that make a fashion statement.</p>
+        </div>
+    </a>
+
+
+    <footer>
+        <p>© 2024 Ecommerce Aggregator</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

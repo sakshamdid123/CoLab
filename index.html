@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoLab</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            color: #fff;
+            background-color: #070606;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .logo{
+            width: 100px;
+            height: auto;
+            overflow: fit;
+        }
+
+        .logo img{
+            width: 100px;
+            height: auto;
+            overflow: fit;
+        }
+
+        /* Header and navigation styling */
+        header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navigation {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            gap: 15px;
+            animation: fadeIn 1s ease-in-out forwards;
+            opacity: 0; /* Initial state for animation */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navigation li {
+            text-transform: capitalize;
+            font-size: 1em;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navigation li a:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+            animation: fadeIn 1s ease-in-out forwards 0.2s; /* Slight delay */
+        }
+
+        /* Tagline styling */
+        .tagline {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 3em;
+            font-weight: 600;
+            line-height: 1.2;
+            animation: fadeIn 1s ease-in-out forwards 0.2s; /* Slight delay */
+        }
+
+        /* Subtitle styling */
+        .subtitle {
+            text-align: center;
+            margin-top: 10px;
+            color: #aaa;
+            font-size: 1.2em;
+            animation: fadeIn 1s ease-in-out forwards 0.2s; /* Slight delay */
+        }
+
+        /* Circular image placeholders in a row */
+        .placeholders {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .placeholder {
+            width: 200px;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            box-shadow: rgba(74, 74, 74, 0.8) 0 0 1000px 1px;
+            animation: slideUp 1.2s ease-in-out forwards 0.2s; /* Slight delay */
+            z-index: -1;
+        }
+
+        .placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the entire placeholder without distortion */
+            border-radius: 10px; /* Matches the rounded corners of the placeholder */
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Button styling */
+        .explore-btn {
+            display: block;
+            padding: 10px 30px;
+            margin: 20px auto;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 30px;
+            text-transform: capitalize;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out forwards 1; /* Slight delay */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .explore-btn:hover {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            transform: scale(1.1);
+        }
+
+        .explore-btn::after {
+            content: '→';
+            font-weight: bold;
+            padding-left: 5px;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .explore-btn:hover::after {
+            transform: translateX(5px);
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #aaa;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="./Logos/CoLablogo.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="navigation d-flex align-items-center">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Showcase.html">Showcase</a></li>
+                <li><a href="./About Us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="tagline">
+        <p>for students, by students.</p>
+    </div>
+    <div class="subtitle">
+        <p>Unveiling a fashion destination where trends blend seamlessly with your individual style aspirations. Discover today!</p>
+    </div>
+    <div>
+        <a href="./Showcase.html" target="_blank" style="text-decoration: none;">
+            <button class="explore-btn">Explore more</button>
+        </a>
+    </div>
+    <div class="placeholders">
+        <div class="placeholder">
+            <img src="./Images/anavabyree-20240227_091935-430400419_1456462724942264_5330745269556265661_n.jpeg" alt="Image 1">
+        </div>
+        <div class="placeholder">
+            <img src="./Images/tote_toodles-20210826_154935-240409174_953890122009671_1986592132493618114_n.jpeg" alt="Image 2">
+        </div>
+        <div class="placeholder">
+            <img src="./Images/bombay.bintage-20240217_192658-427950402_1489888408540932_5027256614065204511_n.jpeg" alt="Image 3">
+        </div>
+        <div class="placeholder">
+            <img src="./Images/Esscent.jpg" alt="Image 4">
+        </div>  
+        <div class="placeholder">
+            <img src="./Images/y2kcache-20230804_210428-364943182_808845644227995_6743215853541497686_n.jpeg" alt="Image 5">
+        </div>  
+    </div>
+    
+    <footer>
+        <p>© 2024 Ecommerce Aggregator</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

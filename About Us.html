@@ -1,0 +1,306 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us - Ecommerce Aggregator</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* General body styles */
+            .logo{
+                    width: 100px;
+                    height: auto;
+                    overflow: fit;
+                }
+
+                .logo img{
+                    width: 100px;
+                    height: auto;
+                    overflow: fit;
+                }
+
+            body {
+                color: #fff;
+                background-color: #070606;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                z-index: 2;
+            }
+
+            /* Header and navigation styling */
+            header {
+                padding: 20px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 20;
+            }
+
+            .navigation {
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                gap: 15px;
+                animation: fadeIn 1s ease-in-out forwards;
+                opacity: 0;
+                z-index: 20;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .navigation li {
+                text-transform: capitalize;
+                font-size: 1em;
+            }
+
+            .navigation li a {
+                text-decoration: none;
+                color: #fff;
+                padding: 8px 15px;
+                border-radius: 20px;
+                transition: background-color 0.3s, transform 0.3s;
+            }
+
+            .navigation li a:hover {
+                background-color: #444;
+                transform: scale(1.05);
+            }
+
+            .logo {
+                font-weight: bold;
+                font-size: 1.5em;
+                animation: fadeIn 1s ease-in-out forwards 0.3s;
+            }
+
+            /* About section styling */
+            .about-section {
+                padding: 8% 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                
+            }
+
+            .about-content {
+                width: 60%;
+            }
+
+            .about-title {
+                font-weight: bold;
+                font-size: 2.5rem;
+                animation: fadeIn 1s ease-in-out forwards 0.3s;
+            }
+
+            .about-text {
+                color: #bbb;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                font-size: 1rem;
+                animation: fadeIn 1s ease-in-out forwards 0.3s;
+            }
+            
+            .about-buttons {
+                margin-top: 20px;
+                animation: fadeIn 1s ease-in-out backwards 0.5s;
+            }
+
+            .btn-play,
+            .btn-google {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+                margin-right: 10px;
+                border-radius: 5px;
+                transition: all 0.3s;
+            }
+
+            .btn-google {
+                background-color: #fff;
+                color: #000;
+                border: none;
+            }
+
+            .btn-google:hover {
+                background-color: #333;
+                color: #fff;
+            }
+
+            .btn-play {
+                background-color: #000;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+            
+
+            .btn-play:hover {
+                background-color: #444;
+            }
+
+            /* Image placeholders - 3 columns of 4 images, aligned to the right of the screen */
+            .image-grid {
+                position: absolute;
+                top: 12%;
+                right: 5%;
+                bottom: 1%;
+                height: 100%;
+                width: 35%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* 3 columns */
+                grid-template-rows: repeat(3, 1fr);    /* 4 rows */
+                gap: 1%;
+                padding: 1%;
+                z-index: -1;
+                animation: fadeIn 1s ease-in-out forwards 0.4s;
+                padding-bottom: 10%;
+                margin-bottom: 5%;
+            }
+
+            .placeholder123 {
+            }
+
+            .image-grid .image {
+                background-color: #fff;
+                width: 100%;
+                height: 100%;
+                box-shadow: 0 0 80px 0.5px rgba(73, 73, 73, 0.5); 
+                border-radius: 20px;
+            }
+
+            .image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                z-index: -1;
+            }
+
+            /* Footer styling */
+            footer {
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                color: #aaa;
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .about-section {
+                    flex-direction: column;
+                }
+
+                .about-content {
+                    width: 100%;
+                }
+
+                .image-grid {
+                    display: none;
+                }
+
+                .about-title {
+                    font-size: 2rem;
+                }
+
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="container">
+            <div class="logo">
+                <img src="./Logos/CoLablogo.png" alt="logo">
+            </div>
+            <nav>
+                <ul class="navigation d-flex align-items-center">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Showcase.html">Showcase</a></li>
+                    <li><a href="./About Us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="about-section container">
+            <div class="about-content">
+                <h2 class="about-title">About CoLab</h2>
+                <p class="about-text">
+                    After noticing that many student-run businesses within Delhi University remained confined
+                     to their own colleges, we launched a social initiative aimed
+                    at connecting these ventures across the university. Our goal is to break down barriers, providing a platform that
+                     exposes student businesses to a broader audience and fosters collaboration between colleges. 
+                    What sets us apart is our commitment to supporting these entrepreneurs without charging any commission, ensuring that all 
+                    profits stay with the students. Through events, social media campaigns, and a dedicated platform, we aim to 
+                    build a more interconnected and thriving student business ecosystem across Delhi University.
+                </p>
+                <div class="about-buttons">
+                    <a href="https://play.google.com/store" target="_blank">
+                        <button class="btn btn-google">
+                            <i class="fab fa-google"></i> Google Play
+                        </button>
+                    </a>
+
+                    <a href="https://www.apple.com/app-store/" target="_blank">
+                        <button class="btn btn-play">
+                            <i class="fab fa-apple"></i> Play Store
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- New 3-column image placeholders -->
+        <div class="image-grid">
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/anavabyree-20240227_091935-430400419_1456462724942264_5330745269556265661_n.jpeg" alt="Placeholder 1"></div>
+            </div>
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/anavabyree-20240319_203112-433960792_402928519103097_6921289882982064267_n.jpeg" alt="Placeholder 2"></div>
+            </div>
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/anavabyree-20240526_173000-446211297_1605965569975498_5623830178050143604_n.jpeg" alt="Placeholder 3"></div>
+            </div>
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/tote_toodles-20210826_154935-240409174_953890122009671_1986592132493618114_n.jpeg" alt="Placeholder 4"></div>
+            </div>
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/tote_toodles-20210826_154946-240503428_236964808433282_7286918138902000574_n.jpeg" alt="Placeholder 5"></div>
+            </div>
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/tote_toodles-20211021_151946-246858019_569964347614619_6281605778124611796_n.jpeg" alt="Placeholder 6"></div>
+            </div>
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/bombay.bintage-20240217_192658-427950402_1489888408540932_5027256614065204511_n.jpeg" alt="Placeholder 7"></div>
+            </div>
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/bombay.bintage-20240905_195821-458524064_871174167813694_7703503620986074229_n.jpeg" alt="Placeholder 8"></div>
+            </div>
+            <div class="placeholder123">
+                <div class="image"><img src="./Images/y2kcache-20230804_210428-364943182_808845644227995_6743215853541497686_n.jpeg" alt="Placeholder 9"></div>
+            </div>
+        </div>
+s        
+
+        <footer>
+            <p class="text-center">© 2024 Ecommerce Aggregator</p>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>

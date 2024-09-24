@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Ecommerce Aggregator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            color: #fff;
+            background-color: #070606;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header and navigation styling */
+        header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navigation {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navigation li a:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        /* Product container styling */
+        .product-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 4%;
+        }
+
+        .product-image {
+            width: 500px; /* Adjust size as needed */
+            height: 500px; /* Keep it square */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image covers the entire square */
+        }
+
+        .product-info {
+            margin-left: 30px;
+            padding-left: 20px;
+            max-width: 600px;
+        }
+
+        .product-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #aaa;
+        }
+
+        .small-logo-container {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .chat-btn {
+            display: block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #ffffff; /* Green color */
+            color: #000000;
+            border: none;
+            border-radius: 30px;
+            text-transform: capitalize;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+            width: 150px; /* Fixed width */
+
+        }
+
+        .chat-btn:hover {
+            background-color: #218838; /* Darker green on hover */
+            transform: scale(1.05);
+        }
+
+        .logo{
+            width: 100px;
+            height: auto;
+            overflow: fit;
+        }
+
+        .logo img{
+            width: 100px;
+            height: auto;
+            overflow: fit;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #aaa;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="./Logos/CoLablogo.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="navigation d-flex align-items-center">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Showcase.html">Showcase</a></li>
+                <li><a href="./About Us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="./Images/anavabyree-20240227_091935-430400419_1456462724942264_5330745269556265661_n.jpeg" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">Anavabyree Collection</h1>
+            <p class="product-description">
+                Discover exclusive handcrafted clothing blending tradition with modern trends. Each piece is designed with care and precision, ensuring you wear a piece of art that tells a story.
+                <br><br>
+                Perfect for various occasions, this collection emphasizes elegance and style, making it an essential addition to your wardrobe.
+            </p>
+            <div class="small-logo-container">
+                <a href="https://www.instagram.com/yourprofile" target="_blank">
+                    <img src="./Logos/instagram.png" alt="Instagram Logo" style="width: 50px; height: auto; border-radius: 5px;">
+                </a>
+            </div>
+            <button class="chat-btn">Chat to Buy</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Ecommerce Aggregator</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

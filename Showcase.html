@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholders Page - Ecommerce Aggregator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            color: #fff;
+            background-color: #070606;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header and navigation styling */
+        header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navigation {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navigation li {
+            text-transform: capitalize;
+            font-size: 1em;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            
+        }
+
+        .navigation li a:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        /* Placeholder grid styling */
+        .placeholder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 50px 10%;
+            justify-items: center;
+        }
+
+        .placeholder {
+            width: 200px;
+            height: 350px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+            /* Ensure full opacity */
+            opacity: 1;
+            /* Remove any filters */
+            filter: none;
+            transition: transform 0.4s; /* Add transition for smooth effect */
+        }
+
+        .placeholder:hover {
+            transform: translateY(-5px); /* Raise effect on hover */
+        }
+
+        .placeholder h5 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .placeholder p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Image container styling */
+        .image {
+            width: 100%;
+            height: 220px; /* Adjust height as needed */
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Ensure no opacity or filters on the image container */
+            opacity: 1;
+            filter: none;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+            /* Ensure full opacity and remove any filters */
+            opacity: 1;
+            filter: none;
+        }
+
+        .logo{
+            width: 100px;
+            height: auto;
+            overflow: fit;
+        }
+
+        .logo img{
+            width: 100px;
+            height: auto;
+            overflow: fit;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            color: #aaa;
+            z-index: 1;
+            background-color: #070606; /* Added to blend footer with body */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="./Logos/CoLablogo.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="navigation d-flex align-items-center">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Showcase.html">Showcase</a></li>
+                <li><a href="./About%20Us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content filled with placeholders -->
+    <section class="placeholder-grid">
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/anavabyree-20240227_091935-430400419_1456462724942264_5330745269556265661_n.jpeg" alt="Placeholder 1">
+            </div>
+            <h5>Placeholder 1</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/anavabyree-20240319_203112-433960792_402928519103097_6921289882982064267_n.jpeg" alt="Placeholder 2">
+            </div>
+            <h5>Placeholder 2</h5>
+            <p>Consectetur adipiscing elit.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/anavabyree-20240526_173000-446211297_1605965569975498_5623830178050143604_n.jpeg" alt="Placeholder 3">
+            </div>
+            <h5>Placeholder 3</h5>
+            <p>Sed do eiusmod tempor.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/tote_toodles-20210826_154935-240409174_953890122009671_1986592132493618114_n.jpeg" alt="Placeholder 4">
+            </div>
+            <h5>Placeholder 4</h5>
+            <p>Incididunt ut labore et dolore.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/tote_toodles-20210826_154946-240503428_236964808433282_7286918138902000574_n.jpeg" alt="Placeholder 5">
+            </div>
+            <h5>Placeholder 5</h5>
+            <p>Ut enim ad minim veniam.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/tote_toodles-20211021_151946-246858019_569964347614619_6281605778124611796_n.jpeg" alt="Placeholder 6">
+            </div>
+            <h5>Placeholder 6</h5>
+            <p>Quis nostrud exercitation.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/bombay.bintage-20240905_195821-458524064_871174167813694_7703503620986074229_n.jpeg" alt="Placeholder 8">
+            </div>
+            <h5>Placeholder 8</h5>
+            <p>Aliquip ex ea commodo.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/y2kcache-20230804_210428-364943182_808845644227995_6743215853541497686_n.jpeg" alt="Placeholder 9">
+            </div>
+            <h5>Placeholder 9</h5>
+            <p>Duis aute irure dolor in.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/Esscent.jpg" alt="Placeholder 10">
+            </div>
+            <h5>Placeholder 10</h5>
+            <p>Reprehenderit in voluptate.</p>
+        </a>
+        <a href="./product.html" class="placeholder">
+            <div class="image">
+                <img src="./Images/Esscent.jpg" alt="Placeholder 11">
+            </div>
+            <h5>Placeholder 11</h5>
+            <p>Reprehenderit in voluptate.</p>
+        </a>
+    </section>
+    
+
+    <footer>
+        <p>© 2024 Ecommerce Aggregator</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
